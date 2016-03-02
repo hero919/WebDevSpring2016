@@ -1,0 +1,17 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div ng-controller="SidebarController" class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li class="btn" ng-class="{'btn-primary': $location.url()=='/'}"><a href="#home">Home</a></li>
+                <!--<span class="sr-only">(current)</span>-->
+                <li ng-show="user" class="btn" ng-class="{'btn-danger': $location.url()=='/profile'}"><a href="#profile">Profile</a></li>
+                <li ng-show="user" class="btn" ng-class="{'btn-primary': $location.url()=='/admin'}"><a href="#admin">Admin</a></li>
+                <li ng-show="user" class="btn" ng-class="{'btn-primary': $location.url()=='/forms'}"><a href="#forms">Forms</a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+    </div>
+</div>

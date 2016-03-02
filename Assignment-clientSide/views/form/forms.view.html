@@ -1,0 +1,44 @@
+
+        <div ng-controller="FormController" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h1>Forms</h1>
+            <!--Didn't know how to make form-control also in one line. Submit button also has some problem-->
+
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active"><a href="#forms">Forms</a></li>
+                <li role="presentation"><a href="#form-fields">Fields</a></li>
+            </ul>
+            <h6>{{errormessage}}</h6>
+            <table class="table table-striped">
+                <tr>
+                    <th><i class="fa fa-fw fa-sort"></i>Form Name</th>
+                    <th><i class="fa fa-fw fa-sort"></i>Action</th>
+                </tr>
+                <tr>
+                    <td><input ng-model="newForm.title" class="form-control"></td>
+                    <td>
+                        <button ng-click="updateForm()" type="button" class="btn btn-success pull-right">
+                            <span class="glyphicon glyphicon-ok"></span>
+                        </button>
+                        <button ng-click="addForm()" type="button" class="btn btn-warning pull-right">
+                            <span class="glyphicon glyphicon-plus"></span>
+
+                        </button>
+
+                    </td>
+                </tr>
+                <tr ng-repeat="f in forms">
+                    <td>
+                        {{f.title}}
+                    </td>
+                    <td>
+                        <button ng-click="selectForm($index)" type="button" class="btn btn-warning pull-right">
+                            <span class="glyphicon glyphicon-pencil"></span>
+                        </button>
+                        <button ng-click="deleteForm($index)" type="button" class="btn btn-danger pull-right">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
