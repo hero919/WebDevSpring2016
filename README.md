@@ -1,13 +1,10 @@
 # WebDevSpring2016
 1.Developer Use Cases:
--Developer registers
--Developer logs in
--Developer views their profile
--Developer updates their profile
--Developer logs out
-
-
-
+  -Developer registers
+  -Developer logs in
+  -Developer views their profile
+  -Developer updates their profile
+  -Developer logs out
 2.Submitter User Cases:
 -Submitter fills out form
 -Submitter submits form
